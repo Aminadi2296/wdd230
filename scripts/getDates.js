@@ -3,3 +3,4 @@ document.getElementById("placeholder").innerHTML = new Date(document.lastModifie
 let date = new Date();
 let year = date.getFullYear();
 document.getElementById("currentYear").innerHTML = year;
+
