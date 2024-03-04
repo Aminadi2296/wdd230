@@ -40,6 +40,7 @@ main{
     margin: 1em;
     background: white;
     align-items: center;
+    justify-content: center;
 }
 
 .card h3{
@@ -68,7 +69,8 @@ main{
 }
 
 .card img{
-    width: 30em;
+    height: fit-content;
+    width: 25em;
     padding:  1.5em 2em;
     align-items: center;
 }

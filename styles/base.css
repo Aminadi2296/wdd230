@@ -2,12 +2,19 @@
     padding: 0;
     margin: 0;
 }
+
+:root{
+    --dark-green: #132a13;
+    --standard-green: #3a5a40;
+    --gray-green: #a3b18a;
+}
+
 body{
-    font-family: "Raleway", sans-serif;
+    font-family: 'Alegreya', sans-serif;
 }
 
 header{
-    background-color: #265474;
+    background-color: var(--standard-green);
     color: #fff;
     display: flex;
     align-items: center;
@@ -26,7 +33,7 @@ header span{
 }
 
 nav {
-	background-color: #36454f;
+	background-color: var(--dark-green);
 }
 
 nav ul {
@@ -44,9 +51,9 @@ nav a {
 }
 
 nav a:hover{
-    background: red;
-    font-weight: 900;
-    transition: 0.6s;
+    background: #a3b18a;
+    font-weight: 800;
+    transition: 0.5s;
 }
 
 main{
@@ -81,7 +88,7 @@ main h1{
 }
 
 footer{
-    background: #265474;
+    background: var(--standard-green);
     color: #fff;
     padding: 1em;
     margin-top: 1em;
