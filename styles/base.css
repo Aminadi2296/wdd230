@@ -36,6 +36,38 @@ nav {
 	background-color: var(--dark-green);
 }
 
+#myButton::before{
+    content: "\2630";
+}
+
+#myButton{
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+li.current-menu-item a{
+    background: var(--gray-green);
+}
+
+ul.menuLinks{
+    display: none;
+}
+
+/* CSS for the open class */
+#myButton.open::before {
+    content: "x";
+}
+
+ul.menuLinks.open{
+    display: block;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -48,12 +80,6 @@ nav a {
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
-}
-
-nav a:hover{
-    background: #a3b18a;
-    font-weight: 800;
-    transition: 0.5s;
 }
 
 main{

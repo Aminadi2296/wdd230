@@ -8,6 +8,21 @@ nav ul li{
     flex: 1 1 100%;
 }
 
+#myButton{
+    display: none;
+}
+
+ul.menuLinks, ul.menuLinks.open{
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.menuLinks a:hover{
+    background: #a3b18a;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
 body{
     display: grid;
 }
