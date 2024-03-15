@@ -1,0 +1,52 @@
+@media (min-width: 700px){
+
+    header{
+        height: 9em;
+
+    }
+
+    header img{
+        height: 7em;
+        padding: 1em;
+    }
+    
+    header span{
+        font-weight: 900;
+        font-size: 2em;
+    }
+
+    nav ul{
+        display: flex;
+    }
+    
+    nav ul li{
+        flex: 1 1 100%;
+    }
+
+    ul.menuLinks a:hover{
+        background: var(--red-cherry);
+        font-weight: 800;
+        transition: 0.5s;
+    }
+
+    ul.menuLinks, ul.menuLinks.open{
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    #myButton{
+        display: none;
+    }
+
+    .hero-container{
+        height: 30em;
+    }
+
+
+    .btn-join{
+        margin-bottom: 35px;
+        left: 35rem;
+        font-size: 1.6rem;
+    }
+
+}

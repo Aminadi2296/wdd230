@@ -65,11 +65,12 @@ li.current-menu-item a{
     background: var(--gray-green);
 }
 
+
+/* CSS for the open class */
 ul.menuLinks{
     display: none;
 }
 
-/* CSS for the open class */
 #myButton.open::before {
     content: "x";
 }
