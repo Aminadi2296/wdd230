@@ -132,7 +132,7 @@ ul.menuLinks.open{
 }
 
 .spotlight-card{
-    grid-column: 1fr;
+    display: block;
 }
 
 /* FOOTER */
