@@ -33,4 +33,11 @@ main{
     grid-gap: 0.5em;
 }
 
+.hero{
+    margin: 0;
+    padding:0em 2em;
+    grid-column: 1/4;
 }
+
+}
+

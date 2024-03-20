@@ -93,6 +93,20 @@ nav a {
 	text-decoration: none;
 }
 
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+  
+.hero picture {
+    display: block;
+}
+  
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 main{
     padding: 1em;
 }
@@ -127,6 +141,16 @@ main h1{
 
 .second{
     text-align: center;
+}
+
+.second p{
+    padding: 1em 0;
+}
+
+iframe{
+    display: block;
+    width: 90%;
+    padding: 1em;
 }
 
 footer{
