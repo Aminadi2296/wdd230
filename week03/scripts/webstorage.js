@@ -2,8 +2,6 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-const chaptersLSKey = 'myFavBOMList'; //////////////////////////////
-
 let chaptertsArray = getChaptersList() || [];
 
 chaptersArray.forEach(chapter => {

@@ -186,3 +186,34 @@ footer{
     color: #fff;
     padding: 1em;
 }
+
+
+/* DISCOVER SECTION */
+.sidebar{
+    grid-gap: 13em;
+}
+.sidebar section{
+    /* background: red; */
+    border: 2px solid #ddd;
+    height: auto;
+    padding: 1.5em;
+    margin-bottom:1em;
+}
+
+.sidebar section h2{
+    padding-bottom: .5em;
+}
+
+.sidebar section p{
+    line-height: 22px;
+}
+
+.discover picture img{
+    width: 100%;
+    height: auto;
+}
+
+.discover picture figcaption {
+    padding: 1em 1em 1.5em;
+    text-align: center;
+  }

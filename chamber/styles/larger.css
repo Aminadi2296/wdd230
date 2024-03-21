@@ -83,4 +83,18 @@
         grid-column: 3/4;
     }
 
+    /* DISCOVER SECTION */
+    .discover main{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 2em 4em;
+        grid-gap: 1.5em;
+    }
+
+    .sidebar section{
+        height: 10em;
+    }
+
+
+
 }
