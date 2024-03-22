@@ -18,7 +18,7 @@ ul.menuLinks, ul.menuLinks.open{
 }
 
 ul.menuLinks a:hover{
-    background: #a3b18a;
+    background: #0d1d0d;
     font-weight: 800;
     transition: 0.5s;
 }
@@ -37,6 +37,11 @@ main{
     margin: 0;
     padding:0em 2em;
     grid-column: 1/4;
+}
+
+.hero-label {
+    width: 18em;
+    font-size: 20px;
 }
 
 }

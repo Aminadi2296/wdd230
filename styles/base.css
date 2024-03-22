@@ -7,6 +7,7 @@
     --dark-green: #132a13;
     --standard-green: #3a5a40;
     --gray-green: #a3b18a;
+    --red-cherry: #bc4749;
 }
 
 body{
@@ -62,7 +63,8 @@ nav {
 }
 
 li.current-menu-item a{
-    background: var(--gray-green);
+    background: #0d1d0d;
+    color: #fff;
 }
 
 
@@ -106,6 +108,23 @@ nav a {
     width: 100%;
     height: auto;
 }
+
+.hero-label {
+    position: absolute;
+    width: 12em;
+    font-size: 15px;
+    text-align: center;
+    bottom: 20px;
+    right: calc(50% - 109px);
+    background-color:var(--dark-green);
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.8;
+    padding: 10px;
+    white-space: nowrap;
+}
+
 
 main{
     padding: 1em;

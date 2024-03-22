@@ -2,7 +2,7 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
-let chaptertsArray = getChaptersList() || [];
+let chaptersArray = getChaptersList() || [];
 
 chaptersArray.forEach(chapter => {
     displayList(chapter);
@@ -39,7 +39,7 @@ function displayList(item) {
     localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
   }
 
-  function getChapterList() {
+  function getChaptersList() {
     return JSON.parse(localStorage.getItem('myFavBOMList'));
   }
 
