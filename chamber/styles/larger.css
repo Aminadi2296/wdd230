@@ -95,6 +95,9 @@
         height: 10em;
     }
 
+    .images-container img:hover{
+        box-shadow: 0 0 50px #333;
+    }
 
 
 }
