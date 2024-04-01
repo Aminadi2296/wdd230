@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+thead > tr th:nth-child(n+2){
+    background: rgb(51, 49, 49);
+    margin-bottom: 1px;
+  }
+
+td, th{
+    border: 1px solid rgb(190,190,190);
+    padding: 1em 2em;
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(228, 218, 218);
+}
+
+td{
+    text-align: center;
+}
+
+tr > th{
+    background: #000;
+    color: white;
+    border: none;
+}
+
+caption{
+    caption-side: bottom;
+    padding-top: 1em;
+}
