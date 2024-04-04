@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moroni A Perez - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="course assignment portal for WDD 230 - Web Frontend Development created by Moroni Perez">
+    <meta name="author" content="Moroni Perez">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Valencia Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://prodavinci.wpenginepowered.com/wp-content/uploads/2022/03/img-val-071.jpg">
+    <meta property="og:url" content="https://aminadi2296.github.io/wdd230/">
+
+</head>
+<body>
+    <header>
+        <img src="images/mypicture.jpg" alt="Picture of Moroni Perez">
+        <span>Moroni A. Perez</span>
+    </header>
+    <nav>
+        <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode" id="darkBtn">
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li class="current-menu-item"><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Feedback Form</h1>
+        <form class="form" action="record.html" method="get">
+            <label class="input-label">
+                <span class="label-value">Username:</span>
+                <input type="text" id="username" name="username" required>
+            </label>
+            <label class="input-label">
+                <span class="label-value">Password:</span>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,12}" required title="must be at least eight (8) characters long and can only be alpha-numeric">
+            </label>
+            <label class="input-label">
+                <span class="label-value">Confirm Password:</span>
+                <input type="password" id="password2" name="password2" pattern="[A-Za-z0-9]{8,12}" required title="must be at least eight (8) characters long and can only be alpha-numeric">
+                <span class="password-error-msg" id="js-password-error-msg"></span>
+            </label>
+            <label class="input-label">
+                <span class="label-value">Email:</span>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" required
+                  title="Must be an student email address">
+            </label>    
+            <label class="input-label">
+                <span class="label-value">Page Rating: <span class="rangevalue" id="js-rangevalue">1</span> </span>
+                <input type="range" id="js-range" name="range" title="Allow values from 1 to 10 with a step of 1" min="1"
+                  max="10" value="1" step="1">
+                <datalist class="rangevalues">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </datalist>
+            </label>
+              <input class="submit" type="submit" value="Provide my feedback">
+
+
+
+        </form>
+        
+    </main>
+    <footer>
+        <p>&#169;<span id="currentYear"></span> - Moroni Perez - Venezuela</p>
+        <p>Last Modification: <a id="placeholder"></a></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <!-- <script src="scripts/scripts.js"></script> -->
+    <script src="scripts/formvalidation.js"></script>
+</body>
+</html>
