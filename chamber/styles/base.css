@@ -6,7 +6,7 @@
 :root{
     --dark-green: #132a13;
     --standard-green: #3a5a40;
-    --gray-green: #a3b18a;
+    --gray-green: #aeb89e;
     --red-cherry: #bc4749;
 }
 
@@ -217,3 +217,103 @@ footer{
     padding: 1em 1em 1.5em;
     text-align: center;
   }
+
+  /* JOIN SECTION  */
+
+.join-section-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.join-section-container h1{
+    text-align: center;
+}
+  /* FORM FOR JOIN SECTION */
+.form-container{
+    width: 100%;
+}
+
+
+.form {
+    width: 20em;
+    padding: 0 3em;
+}
+
+.form .label {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea, select {
+    width: 100%;
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    appearance: none;
+}
+
+.form .submit {
+    margin-top: 20px;
+    padding: 16px 40px;
+    background-color:var(--dark-green);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+input:required {
+    border-left: solid 7px var(--red-cherry);
+}
+
+input:required:valid {
+    border-left: solid 8px var(--standard-green);
+}
+  
+  
+
+
+  /* TABLE FOR JOIN SECTION */
+.table-container{
+    padding: 8em 0;
+    width: 100%;  
+}
+
+.table-container table{
+    padding: 0 2em;
+}
+
+
+
+.join-section-container thead {
+    background-color: var(--dark-green);
+    color: white;
+}
+  
+th,
+td {
+    padding: 15px 20px;
+    text-align: center;
+    border-top: black;
+    border-left: black;
+    font-weight: bold;
+}
+  
+/* th:not(:first-child) {
+    background-color: var(--dark-green);
+} */
+  
+.join-section-container td:last-child,
+.join-section-container th:last-child {
+    border-right: var(--dark-green);
+}
+ 
+.join-section-container tr:nth-child(even) {
+    background-color: var(--gray-green);
+}
