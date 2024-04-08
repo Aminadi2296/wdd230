@@ -233,7 +233,6 @@ footer{
     width: 100%;
 }
 
-
 .form {
     width: 20em;
     padding: 0 3em;
@@ -276,9 +275,6 @@ input:required:valid {
     border-left: solid 8px var(--standard-green);
 }
   
-  
-
-
   /* TABLE FOR JOIN SECTION */
 .table-container{
     padding: 8em 0;
@@ -288,8 +284,6 @@ input:required:valid {
 .table-container table{
     padding: 0 2em;
 }
-
-
 
 .join-section-container thead {
     background-color: var(--dark-green);
