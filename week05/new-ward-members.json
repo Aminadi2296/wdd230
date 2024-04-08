@@ -1,0 +1,29 @@
+{
+    "familyName": "Specter Bonilla",
+    "movedDate": "2024-03-16",
+    "numberIntegrants": "4",
+    "visitedByBishop": true,
+    "members" : [
+    {
+        "name" : "William Specter",
+        "gender" : "male",
+        "birthdate" : "1970-12-16"
+    },
+    {
+        "name" : "Marie Claire Bonilla",
+        "gender" : "female",
+        "birthdate" : "1977-04-10"
+    },
+    {
+        "name" : "Louis Specter",
+        "gender" : "male",
+        "birthdate" : "1999-12-22"
+    },
+    {
+        "name" : "David Specter",
+        "gender" : "male",
+        "birthdate" : "2005-12-24"
+    }
+]
+
+}
