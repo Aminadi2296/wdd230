@@ -119,5 +119,27 @@
         color: #fff;
     }
 
+    /* directory section */
+    .directories-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        /* padding: 1em 1em; */
+    }
+
+    .directories-container section:hover{
+        box-shadow: 0 0 50px #333;
+    }
+    
+    .directories-container img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .directories-container section{
+        width: 90%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+    
 
 }

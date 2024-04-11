@@ -313,3 +313,41 @@ td {
 }
 
 /* Directory Section */
+h2{
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+}
+
+.directories-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 2em;
+
+} 
+
+.directories-container section{
+    width: 80%;
+    border: 2px solid gray;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.directories-container h3{
+    font-size:2em;
+    margin-bottom: 0.8em;
+}
+
+.directories-container img{
+    width: 280px;
+    height: auto;
+}
+
+.directories-container section p{
+    padding: 0.1em 0;
+}
+
+
+

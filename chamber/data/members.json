@@ -5,26 +5,26 @@
       "phone": "111-223-456",
       "website": "https://ceramica-carabobo.com",
       "image": "ceramicas.webp",
-      "membership": "gold",
-      "otherInfo": "national ceramic producer"
+      "membership": "Gold",
+      "info": "National ceramic producer"
     },
     {
       "name": "Farmatodo",
-      "address": "Naguanagua 3th avenue",
+      "address": "Naguanagua 3th Avenue",
       "phone": "412-456-789",
       "website": "https://farmatodo.com",
       "image": "farmatodo.webp",
-      "membership": "gold",
-      "otherInfo": "pharmacy franchise"
+      "membership": "Gold",
+      "info": "Pharmacy franchise"
     },
     {
-      "name": "Banco mercantil",
-      "address": "Intercomunal avenue, mercantil building",
+      "name": "Banco Mercantil",
+      "address": "Intercomunal Avenue, Mercantil Building",
       "phone": "555-444-333",
       "website": "https://mercantil.com",
       "image": "mercantil.webp",
-      "membership": "gold",
-      "otherInfo": "one of the most important banks in the country"
+      "membership": "Gold",
+      "info": "One of the most important banks in the country"
     },
     {
       "name": "Pepsi Venezuela",
@@ -32,8 +32,8 @@
       "phone": "666-555-444",
       "website": "https://pepsi.ve",
       "image": "pepsi.webp",
-      "membership": "bronze",
-      "otherInfo": "Beverage producer and distributor"
+      "membership": "Bronze",
+      "info": "Beverage producer and distributor"
     },
     {
       "name": "Empresas Polar",
@@ -42,7 +42,7 @@
       "website": "https://alimentos-polar.ve",
       "image": "polar.webp",
       "membership": "Bronze",
-      "otherInfo": "It is one of the largest food companies"
+      "info": "It is one of the largest food companies"
     },
     {
       "name": "Venevision",
@@ -50,8 +50,8 @@
       "phone": "123-456-789",
       "website": "https://venevision.tv",
       "image": "venevision.webp",
-      "membership": "silver",
-      "otherInfo": "one of the main television networks in Venezuela"
+      "membership": "Silver",
+      "info": "One of the main television networks in Venezuela"
     },
     {
       "name": "Digitel",
@@ -59,7 +59,7 @@
       "phone": "111-222-333",
       "website": "https://digitel.com",
       "image": "digitel.webp",
-      "membership": "gold",
-      "otherInfo": "telecommunications company"
+      "membership": "Gold",
+      "info": "Telecommunications company"
     }
   ]

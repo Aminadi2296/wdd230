@@ -16,7 +16,7 @@ hamburgerElement.addEventListener('click', () => {
 
 
 const visitsDisplay = document.querySelector(".visits");
-
+if (visitsDisplay) {
 // 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
@@ -26,22 +26,17 @@ if (numVisits !== 0) {
 } else {
 	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
-
 // 4️⃣ increment the number of visits by one.
 numVisits++;
 
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
-
+}
 
 
 
 
 // DIRECTORY SECTION
-
-const baseURL = window.location.hostname.includes("github") ? "https://aminadi2296.github.io/wdd230/" : "http://127.0.0.1:5500/";
-const url = `${baseURL}/chamber/data/members.json`;
-
 async function getMembers() {
     const baseURL = window.location.hostname.includes("github") ? "https://aminadi2296.github.io/wdd230/" : "http://127.0.0.1:5500/";
     const url = `${baseURL}/chamber/data/members.json`;
@@ -50,7 +45,7 @@ async function getMembers() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        // console.log(data);
+        console.log(data);
         return data;
       } else {
         throw Error(await response.text());
@@ -59,46 +54,61 @@ async function getMembers() {
       console.error(error);
     }
   }
-
-  function directoryPage() {
-    const container = document.querySelector("#js-directories-container");
+  
+  async function directoryPage() {
+    const container = document.querySelector(".directories-container");
     if (!container) return;
+  
+    const members = await getMembers();
+    displayMembers(members, container);
+  }
+  
+  
+  const displayMembers = (members, container) => {
+    members.forEach((member) => {
+      let card = document.createElement('section');
+      let logo = document.createElement('img');
+      let name = document.createElement('h3');
+      let address = document.createElement('p');
+      let phone = document.createElement('p');
+      let website = document.createElement('p');
+      let membership = document.createElement('p');
+      let info = document.createElement('p');
+  
+  
+      name.textContent = `${member.name}`;
+      logo.setAttribute('src', `images/directory/${member.image}`);
+      logo.setAttribute('alt', `Logo of ${name.textContent}.`);
+      logo.setAttribute('loading', 'lazy');
+      logo.setAttribute('width', '350');
+      logo.setAttribute('height', '400');
+      address.textContent = `${member.address}`;
+      phone.textContent = `${member.phone}`;
+      website.textContent = `${member.website}`;
+      membership.textContent = `${member.membership}`;
+      info.textContent = `${member.info}`;
+  
+      // Append the section(card) with the created elements
+      card.appendChild(name);
+      card.appendChild(logo);
+      card.appendChild(address);
+      card.appendChild(phone);
+      card.appendChild(website);
+      card.appendChild(membership);
+      card.appendChild(info);
+  
+      container.appendChild(card);
+    });
   }
 
+  function changeView() {
+    const toGrid = container.querySelector("#js-to-grid");
+    const toList = container.querySelector("#js-to-list");
 
-const displayMembers = (members) => {
-    members.forEach((member) => {
-    let card = document.createElement('section');
-    let logo = document.createElement('img');
-    let name = document.createElement('p');
-    let address = document.createElement('p');
-    let phone = document.createElement('p');
-    let website = document.createElement('p');
-    let membership = document.createElement('p');
-    let info = document.createElement('p');
-
-
-    name.textContent = `${member.name}`;
-    logo.setAttribute('src', member.imageurl);
-    logo.setAttribute('alt', `Logo of ${name.textContent}.`);
-    logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', '340');
-    logo.setAttribute('height', '440');
-    address.textContent = `${member.address}`;
-    phone.textContent = `${member.phone}`;
-    website.textContent = `${member.website}`;
-    membership.textContent = `${member.membership}`;
-    info.textContent = `${member.info}`;
-
-    // Append the section(card) with the created elements
-    card.appendChild(name);
-    card.appendChild(logo);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(website);
-    card.appendChild(membership);
-    card.appendChild(info);
-
-    cards.appendChild(card);
-  });
-}
+    [toGrid, toList].forEach(btn => btn.addEventListener("click", function () {
+      if (this.dataset.view === container.dataset.view) return;
+      container.dataset.view = this.dataset.view;
+    }));
+  }
+  
+  directoryPage();
